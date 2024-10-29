@@ -1,0 +1,17 @@
+.side-container {
+    background-color: aqua;
+    display: flex;
+
+    height: 100vh;
+    width: 30%;
+    
+    justify-content: center;
+}
+
+.side-body {
+    position: relative;
+
+    top: 30vh;
+
+    height: fit-content;
+}

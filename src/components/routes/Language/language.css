@@ -1,0 +1,44 @@
+.lan-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    top: 15vw;
+    padding-left: 5vw;
+}
+
+.radio-label {
+    position: relative;
+    padding-left: 30px; 
+    cursor: pointer;
+    margin-bottom: 10px; 
+}
+
+.radio-label input {
+    position: absolute;
+    opacity: 0; 
+    cursor: pointer;
+}
+
+.radio-label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px; 
+    border: 2px solid #ccc; 
+    border-radius: 50%; 
+    background-color: white; 
+}
+
+.radio-label input:checked + span::before {
+    border: 2px solid #007bff; 
+    background-color: #007bff; 
+}
+
+.lan-body {
+    display: flex;
+    flex-direction: column;
+}
